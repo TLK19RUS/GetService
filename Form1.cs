@@ -58,6 +58,7 @@ namespace ServiceGrid
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = data;
             dataGridView1.DataMember = "services";
+            dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
 
         String get_property(ManagementObject service, String name)
